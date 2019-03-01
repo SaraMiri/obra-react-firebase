@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import Header from "./Header";
 import Footer from "./Footer";
 
-const EventDetails = props => (
+const EventDetailsAxenda = props => (
   <div>
     <Header />
     <div className="event-container">
@@ -21,7 +21,7 @@ const EventDetails = props => (
   </div>
 );
 
-EventDetails.propTypes = {
+EventDetailsAxenda.propTypes = {
   eventDetails: PropTypes.shape({
     name: PropTypes.string.isRequired,
     date_event: PropTypes.string.isRequired,
@@ -29,4 +29,4 @@ EventDetails.propTypes = {
   }).isRequired
 };
 
-export default EventDetails;
+export default EventDetailsAxenda;
